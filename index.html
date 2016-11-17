@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crystals</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</head>
+
+<body>
+
+			<h1>Crystal Collector</h1>
+	
+
+	<div class="One">
+
+		<p>Instructions:</p>
+		<p>To start the game, you will be given a randow number.</p>
+		<p>Below, there are four crystals that each add a different number of points to your score.</p>
+		<p>You will not know the value of each crystal until clicked. These values will refesh after each game.</p>
+		<p>To win, your total score must match the random number assigned to you at the beginning of the game.</p>
+		<p>If your total score goes above the random number assigned to you, you lose the game.</p>
+	</div>
+
+
+	
+	<div class="numsection">
+		<p>Number to Match: </p>
+		<h1 id="random"></h1>
+	</div>
+	
+
+
+	<div class="winsection">
+		<p id="comment"></p>
+		<p>Wins:</p>
+		<p id="win">0 </p>
+		<p>Losses:</p>
+		<p id="loss">0</p>
+	</div>
+
+
+	<div class="picsection">
+		<img src="assets/images/red.jpg" width="125" id="red" class="button" >
+		<img src="assets/images/blue.jpg" width="125" id="blue" class="button" >
+		<img src="assets/images/pink.jpg" width="125" id="pink" class="button" >
+		<img src="assets/images/sky.jpg" width="125" id="sky" class="button" >
+	</div>
+
+
+	<div class="scoretex">
+		<p>Your Total Score:</p>
+		<h1 id="score"></h1>
+	</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+body{
+	background-image: url("../images/back.png");
+
+}
+
+h1{
+	background-color: #ffbdba;
+	width: 700px;
+}
+
+.One{
+	background-color: #ff969b;
+	width: 700px;
+}
+
+.numsection{
+	background-color: #ffbdba;
+	width: 700px;
+}
+
+.winsection{
+	background-color: #ff969b;
+	width: 700px;
+}
+
+.picsection{
+	background-color: black;
+	width: 680px;
+	padding: 10px;
+}
+
+.scoretex{
+	background-color: #ffbdba;
+	width: 700px;
+}
+
+.score{
+	background-color: #ff969b;
+	width: 700px;
+}
