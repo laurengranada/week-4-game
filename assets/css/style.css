@@ -3,6 +3,11 @@ body{
 
 }
 
+.bodyContent{
+	margin: 0 auto;
+
+}
+
 h1{
 	background-color: #ffbdba;
 	width: 700px;
