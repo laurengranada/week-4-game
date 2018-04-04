@@ -11,6 +11,6 @@ HTML, CSS, Javascript, jQuery, Google Fonts
 ### Updates
 Last update: Updated the styling for the page to appeal more to the player; corrected the calculating of crystal values so the player's score is updated correctly.
 
-|   Before       | After      |
+|Before       |After      |
 |   ------------ | -----------: |
 | ![alt text](https://github.com/laurengranada/week-4-game/blob/master/read-images/before.png) | ![alt text](https://github.com/laurengranada/week-4-game/blob/master/read-images/after.png) |
