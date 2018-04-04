@@ -2,60 +2,100 @@
 <html>
 <head>
 	<title>Crystals</title>
+	<!--Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
-
-	<script type="text/javascript" src="assets/javascript/game.js"></script>
+	<!-- google fonts for jumbotron-->
+	<link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
 
 </head>
 
 <body>
 
-			<h1>Crystal Collector</h1>
-	
-
-	<div class="One">
-
-		<p>Instructions:</p>
-		<p>To start the game, you will be given a randow number.</p>
-		<p>Below, there are four crystals that each add a different number of points to your score.</p>
-		<p>You will not know the value of each crystal until clicked. These values will refesh after each game.</p>
-		<p>To win, your total score must match the random number assigned to you at the beginning of the game.</p>
-		<p>If your total score goes above the random number assigned to you, you lose the game.</p>
+<div class="container">
+	<div class="jumbotron" style="background-image: url('assets/images/invertback.png'); font-family: 'Audiowide', cursive;">
+	  <h1 class="text-center">Crystal Collector</h1>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="panel panel-default"style="background-color: #ffbdba;">
+				<div class="panel-heading"style="background-color: #ff969b;">
+			    <h3 class="panel-title text-center">Instructions</h3>
+			  </div>
+			  <div class="panel-body">
+			  	 <p class="text-center">To start the game, you will be given a randow number.</br>
+				Below, there are four crystals that each add a different number of points to your score.</br>
+				You will not know the value of each crystal until clicked. These values will refesh after each game.</br>
+				To win, your total score must match the random number assigned to you at the beginning of the game.</br>
+				If your total score goes above the random number assigned to you, you lose the game.</p>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3" >
+			<div class="panel panel-default" style="background-color: #ffbdba;">
+			  <div class="panel-heading" style="background-color: #ff969b;">
+			    <h3 class="panel-title text-center">Number to Match:</h3>
+			  </div>
+			  <div class="panel-body" class="numsection">
+				<h1 class="text-center" id="matchNumber"></h1>
+			  </div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="panel panel-default"style="background-color: #ffbdba;">
+			  <div class="panel-heading"style="background-color: #ff969b;">
+			    <h3 class="panel-title text-center">Your Total Score:</h3>
+			  </div>
+			  <div class="panel-body" class="scoretex">
+				<h1 class="text-center" id="score"></h1>
+			  </div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="panel panel-default"style="background-color: #ffbdba;">
+			  <div class="panel-heading"style="background-color: #ff969b;">
+			    <h3 class="panel-title text-center">Stats:</h3>
+			  </div>
+			  <div class="panel-body" class="winsection">
+				<h3 id="comment"></h3>
+				<p>Wins:</p>
+				<p id="wins">0 </p>
+				<p>Losses:</p>
+				<p id="losses">0</p>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="panel panel-default"style="background-color: #ffbdba;">
+			  <div class="panel-heading"style="background-color: #ff969b;">
+			    <h3 class="panel-title text-center">Crystals</h3>
+			  </div>
+			  <div class="panel-body text-center" class="picsection">
+			  	<img src="assets/images/red.jpg" width="125" id="red" class="button" >
+				<img src="assets/images/blue.jpg" width="125" id="blue" class="button" >
+				<img src="assets/images/pink.jpg" width="125" id="pink" class="button" >
+				<img src="assets/images/sky.jpg" width="125" id="sky" class="button" >
+			  </div>
+			</div>
+		</div>
+			
+		</div>
 	</div>
 
-
-	
-	<div class="numsection">
-		<p>Number to Match: </p>
-		<h1 id="matchNumber"></h1>
-	</div>
-	
-
-
-	<div class="winsection">
-		<p id="comment"></p>
-		<p>Wins:</p>
-		<p id="wins">0 </p>
-		<p>Losses:</p>
-		<p id="losses">0</p>
-	</div>
-
-
-	<div class="picsection">
-		<img src="assets/images/red.jpg" width="125" id="red" class="button" >
-		<img src="assets/images/blue.jpg" width="125" id="blue" class="button" >
-		<img src="assets/images/pink.jpg" width="125" id="pink" class="button" >
-		<img src="assets/images/sky.jpg" width="125" id="sky" class="button" >
-	</div>
-
-
-	<div class="scoretex">
-		<p>Your Total Score:</p>
-		<h1 id="score"></h1>
-	</div>
-
-
+</div>
+	<!--Bootstrap CDN -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!--jQuery -->
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+	<!--my js -->
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
 
 </body>
 </html>
